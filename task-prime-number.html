@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task-prime-number</title>
+</head>
+<body>
+<!--Xây dựng phương thức:-->
+
+<!--function isPrime(number)-->
+<!--để kiểm tra xem một số nguyên bất kỳ có phải là số nguyên tố hay không. -->
+<!--Sử dụng phương thức này để tìm tất cả các số nguyên tố nhỏ hơn 10000.-->
+<!--Ví dụ, các số sau đây là số nguyên tố:-->
+<!--2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97...-->
+<script>
+    function isPrime(number) {
+        if (number < 2)
+            return false;
+        else if (number > 2) {
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if(number % i === 0 )
+                    return false;
+            } return true;
+        }
+    }
+
+    let input = +prompt ("Bạn muốn hiển thị các số nguyên tố nhỏ hơn bao nhiêu?");
+    for (let i = 0; i < input; i++) {
+        if (isPrime(i))
+            document.write(i + " ");
+    }
+    
+</script>
+</body>
+</html>
