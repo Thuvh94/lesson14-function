@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2-2</title>
+</head>
+<body>
+<!--Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+<script>
+    let inputR = +prompt("Nhập bán kính hình tròn (đơn vị cm)");
+    tinhChuVi(inputR);
+    tinhDienTich(inputR);
+    function tinhChuVi(r) {
+        let chuVi = 2*r*3.14;
+        confirm("Chu vi hình tròn có bán kính " + r + "cm là " + chuVi.toFixed(2) + " cm.");
+    }
+    function tinhDienTich(r) {
+        let dienTich = r * r * 3.14;
+        confirm("Diện tích hình tròn có bán kính " + r + "cm là " + dienTich + " cm2.");
+    }
+</script>
+</body>
+</html>

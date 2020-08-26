@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2-4</title>
+</head>
+<body>
+<!--Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. -->
+<!--Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+<script>
+    function check(char) {
+        let numbers = "0123456789";
+        for (let i = 0; i < char.length; i++) {
+            if (numbers.indexOf(char[i]) < 0 ) {
+                return false;
+            }
+        } return true;
+    }
+    let input = prompt("Insert something");
+    if (check(input))
+        alert("This is a numeric character");
+    else alert("This is not a numeric character");
+
+
+
+
+</script>
+</body>
+</html>

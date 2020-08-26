@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2-7</title>
+</head>
+<body>
+<!--Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+<script>
+    firstNum = +prompt("Insert first num");
+    secondNum = +prompt("Insert second num");
+    alert("Before swap " + firstNum + " and " + secondNum);
+
+    function swap(a,b) {
+        let temp = firstNum;
+        firstNum = secondNum;
+        secondNum = temp;
+        return;
+    } alert("After swap: " + secondNum + " and " + firstNum);
+</script>
+</body>
+</html>

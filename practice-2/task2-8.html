@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2-8</title>
+</head>
+<body>
+<!--Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.-->
+<script>
+    let inputArr = [6,9,10,55,7,9,20];
+    document.write(reverseNum(inputArr));
+    function reverseNum(arr) {1
+        for (let i = 0; i < arr.length; i++) {
+            let temp = arr[i];
+            arr[i] = arr[arr.length-i-1];
+            arr[arr.length-i-1]=temp;
+        } return arr;
+    }
+
+</script>
+</body>
+</html>

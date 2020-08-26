@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task2-5</title>
+</head>
+<body>
+<!--Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.-->
+<script>
+    let firstNum = +prompt("Insert the first num");
+    let secondNum = +prompt("Insert the second num");
+    let thirdNum = +prompt("Insert the third num");
+    let min = findMin(firstNum,secondNum,thirdNum);
+    confirm("Min value is " + min);
+    function findMin(a,b,c) {
+        if (b < a)
+            if (b < c)
+                return b;
+        else if ( c < a)
+            if (c < b)
+                return c;
+        else return a;
+    }
+</script>
+</body>
+</html>
